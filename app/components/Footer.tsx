@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
 
-import { FaBitbucket, FaTwitter, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
