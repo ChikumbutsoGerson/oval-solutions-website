@@ -24,7 +24,7 @@ const AboutCompany = () => {
                     </li>
                     <li>
                         Committed to providing our clients excellent services and geared to
-                        exceed our clients' expectations
+                        exceed our clients&rsquo; expectations
                     </li>
                     <li>
                         Comprised of professionals with diverse expertise and experience in
