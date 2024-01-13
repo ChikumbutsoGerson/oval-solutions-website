@@ -24,14 +24,14 @@ export default async function Home() {
  <main className="w-full h-full  items-center justify-center">
      <div className="mx-auto text-center">
      {/* <img className="w-full h-20 object-cover mb-0 mt-15" src='https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'/> */}
-        <div className="w-full mx-auto p-5 bg-green-50 pt-0">
-        <div className=" bg-blue-500ray-50">
+        <div className="w-full mx-auto p-5 bg-green-50 pt-10">
+        <div className="bg-green-500ray-50">
         <div className="py-10  sm:py-16 block lg:py-24 relative bg-opacity-50  z-40 " >
             <div
                 className="relative mx-auto h-full px-4 pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
                     <section
-   className="relative z-10 overflow-hidden  rounded-3xl bg-white dark:bg-dark py-10 lg:py-[10px]"
+   className="relative z-10 overflow-hidden  rounded-3xl bg-white dark:bg-dark py-10 pb-10 lg:py-[10px]"
    >
    <div className="container mx-auto shadow-lg rounded-3xl">
       <div className="flex flex-wrap -mx-4 lg:justify-between">

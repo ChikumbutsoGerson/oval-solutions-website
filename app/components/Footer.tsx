@@ -16,17 +16,9 @@ const Footer = () => {
                     <Link className="hover:text-yellow-100" href="/services">Services</Link>
                 </li>
                 <li className="my-2">
-                    <Link className="hover:text-yellow-100" href="/achievements">Achievements</Link>
+                    <Link className="hover:text-yellow-100" href="/our-team">Team</Link>
                 </li>
-                {/* <li className="my-2">
-                    <Link className="hover:text-yellow-100" href="/projects">Projects</Link>
-                </li>
-                <li className="my-2">
-                    <Link className="hover:text-yellow-100" href="/our-team">Our Team</Link>
-                </li>
-                <li className="my-2">
-                    <Link className="hover:text-yellow-100" href="/contact-us">Contact Us</Link>
-                </li> */}
+        
             </ul>
         </div>
         <div className="p-5 sm:w-7/12 border-r text-center">
@@ -69,7 +61,6 @@ const Footer = () => {
                     viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     xmlSpace="preserve"
-                    // xmlnsSerif="http://www.serif.com/"
                     style={{
                       fillRule: 'evenodd',
                       clipRule: 'evenodd',

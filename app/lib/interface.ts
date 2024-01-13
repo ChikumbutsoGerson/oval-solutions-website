@@ -33,3 +33,19 @@ export interface Team {
     }
 
 }
+export interface Project {
+    title: string;
+    overview: string;
+    content: any;
+    _id: string;
+    slug: {
+        current: string;
+    };
+    _createdAt: string;
+    mainImage: {
+        asset: {
+            url: string;
+        }
+    }
+
+}

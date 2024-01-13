@@ -38,7 +38,7 @@ const HeroSection = () => {
             <p className="mt-6 text-xl font-medium leading-7 font-sans text-gray-600">Professionals with diverse expertise and experience in various ICT segments committed and dedicated to serving you, our clients, with a great attitude
             </p>
             <button type="button"
-                className="mt-12 text-white bg-green-900 hover:bg-green-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-base px-8 py-4 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                className="mt-12 rounded-full border-1 border-yellow-100 text-white bg-green-900 hover:bg-green-800 focus:outline-none  focus:ring-gray-300 font-medium text-base px-8 py-4 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
               Work With Us
             </button>
         </div>
