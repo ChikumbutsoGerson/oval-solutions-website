@@ -10,23 +10,23 @@ const Footer = () => {
             <div className="uppercase text-yellow-300 font-bold text-2xl">Menu</div>
             <ul>
                 <li className="my-2">
-                    <Link className="hover:text-indigo-600" href="/">Home</Link>
+                    <Link className="hover:text-yellow-100" href="/">Home</Link>
                 </li>
                 <li className="my-2">
-                    <Link className="hover:text-indigo-600" href="/services">Services</Link>
+                    <Link className="hover:text-yellow-100" href="/services">Services</Link>
                 </li>
                 <li className="my-2">
-                    <Link className="hover:text-indigo-600" href="/achievements">Achievements</Link>
+                    <Link className="hover:text-yellow-100" href="/achievements">Achievements</Link>
+                </li>
+                {/* <li className="my-2">
+                    <Link className="hover:text-yellow-100" href="/projects">Projects</Link>
                 </li>
                 <li className="my-2">
-                    <Link className="hover:text-indigo-600" href="/projects">Projects</Link>
+                    <Link className="hover:text-yellow-100" href="/our-team">Our Team</Link>
                 </li>
                 <li className="my-2">
-                    <Link className="hover:text-indigo-600" href="/our-team">Our Team</Link>
-                </li>
-                <li className="my-2">
-                    <Link className="hover:text-indigo-600" href="/contact-us">Contact Us</Link>
-                </li>
+                    <Link className="hover:text-yellow-100" href="/contact-us">Contact Us</Link>
+                </li> */}
             </ul>
         </div>
         <div className="p-5 sm:w-7/12 border-r text-center">

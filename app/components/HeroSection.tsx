@@ -9,6 +9,7 @@ const HeroSection = () => {
     backgroundImage:
       'url(https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260)',
   }}>
+    
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="650" viewBox="0 0 1500 500" preserveAspectRatio="none"
         className="relative w-full">
         <defs>

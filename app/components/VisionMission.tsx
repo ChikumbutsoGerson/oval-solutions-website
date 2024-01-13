@@ -6,8 +6,8 @@ const VisionMission = () => {
 
     <div id="mission-vision" className="mx-auto max-w-6xl">
       <p className="text-center text-green-900 text-xs font-semibold leading-7 text-primary-500">WHAT WE BELIEVE IN</p>
-      <h2 className="text-center font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-        VISION & MISSION
+      <h2 className="text-center font-display text-4xl font-bold tracking-tight text-gray-900 md:text-4xl">
+        VISION AND MISSION
       </h2>
  
       <ul className="flex items-start justify-between gap-8 mt-10 md:flex-row flex-col">

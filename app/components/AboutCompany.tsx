@@ -40,16 +40,16 @@ const AboutCompany = () => {
                     
                 </div>
                 <div className="mb-6">
-                    <a href="/"
+                    <p
                         className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 bg-green-500 rounded-full shadow-md outline-none hover:bg-green-400 focus:ring">
-                        Learn More...</a>
+                        Learn More...</p>
                 </div>
        
             </div>
         </div>
         <div
             className="flex justify-center h-full overflow-hidden lg:absolute lg:bottom-0 lg:right-0 lg:w-2/3 lg:items-end lg:justify-start xl:w-1/2">
-            <img src="https://www.dimensional.me/PhoneImage.png"
+            <img src="/PhoneImage.png"
                 className="object-cover object-top w-full max-w-xl h-96 rounded-2xl lg:ml-64 lg:-mb-24 lg:h-auto lg:max-w-screen-md xl:ml-0 xl:-mb-32"
                 alt="" />
         </div>
