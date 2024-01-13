@@ -45,7 +45,7 @@ export default async function Home() {
                     </div>
                
                   
-                    <div  className="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-3 lg:mt-20">
+                    <div  className="grid grid-cols-1 gap-2  mt-12 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3">
                     {data.map((service) => (
                         <div  key={service._id} 
                             className="transition-all  duration-1000 bg-gray-200 rounded-md hover:shadow-xl m-2 p-4 relative z-40 group  ">

@@ -26,22 +26,22 @@ const NavBar = () => {
         
             <div className="space-x-8">
               {/* Add your navigation links here */}
-              <Link href="/" className={`${ HomePath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-gray-300`}>
+              <Link href="/" className={`${ HomePath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-yellow-300`}>
                 Home
               </Link>
-              <Link href="/services" className={`${ ServicesPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-gray-300`}>
+              <Link href="/services" className={`${ ServicesPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-yellow-300`}>
                  Services
               </Link>
-              <Link href="/achievements" className={`${ AchievementsPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-gray-300`}>
+              <Link href="/achievements" className={`${ AchievementsPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-yellow-300`}>
                  Achievements
               </Link>
-              <Link href="/projects" className={`${ ProjectsPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-gray-300`}>
+              <Link href="/projects" className={`${ ProjectsPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-yellow-300`}>
                  Projects
               </Link>
-              <Link href="/our-team" className={`${ TeamPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-gray-300`}>
+              <Link href="/our-team" className={`${ TeamPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-yellow-300`}>
                 Team
               </Link>
-              <Link href="/contact-us" className={`${ ContactUsPath ? 'font-bold border-b-2 border-yellow-200' : '' } text-white hover:text-gray-300`}>
+              <Link href="/contact-us" className={`${ ContactUsPath ? 'border-b-2  p-3 text-opacity-75 rounded-full border-yellow-200 transition duration-300 animate-pulse  ':'font-bold border-2  p-3 text-opacity-75 rounded-full border-yellow-200 transition duration-300 animate-pulse'} text-yellow-200 hover:text-yellow-300`}>
                 Contact Us
               </Link>
             </div>

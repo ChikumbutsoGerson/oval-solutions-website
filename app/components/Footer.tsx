@@ -30,8 +30,8 @@ const Footer = () => {
             </ul>
         </div>
         <div className="p-5 sm:w-7/12 border-r text-center">
-            <h3 className="font-bold text-2xl text-yellow-300 mb-4">Oval Solutions Company</h3>
-            <p className="mb-10 font-serif">
+            <h3 className="font-bold text-2xl text-yellow-300 mb-4 uppercase text-start">Oval Solutions Company</h3>
+            <p className="mb-10 font-serif text-start">
             Innovative and unconventional ICT solutions provider that came into
              existence in May 2021
             </p>

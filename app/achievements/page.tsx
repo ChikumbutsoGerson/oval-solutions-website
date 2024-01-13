@@ -44,7 +44,7 @@ export default async function Home() {
                     </div>
                
                   
-                    <div  className="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-3 lg:mt-20 lg:grid-cols-4">
+                    <div  className="grid grid-cols-2 gap-2 mt-12 sm:grid-cols-3 lg:mt-20 lg:grid-cols-4">
                     {data.map((client) => (
                         <div key={client._id} 
                             className="">

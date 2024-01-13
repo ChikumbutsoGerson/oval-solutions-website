@@ -42,13 +42,12 @@ export default async function Home() {
                     </div>
                
                   
-                    <div  className="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-3 lg:mt-20">
+                    <div  className="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3">
                     {data.map((member) => (
                         <div  key={member._id} 
-                            className="">
-                     
-                    <div className="w-full h-screen/3  px-10 pt-0">
-                    <div className="relative mt-16 mb-32 max-w-sm mx-auto mt-24">
+                        className="w-full h-screen/3 px-10 pt-0">
+                  
+                    <div className="relative mb-32 max-w-sm mx-auto mt-24">
                      <div className="rounded overflow-hidden shadow-md bg-white">
                    <div className="absolute -mt-20 w-full flex justify-center">
                    <div className="h-32 w-32">
@@ -63,28 +62,24 @@ export default async function Home() {
                </div>
              <div className="px-6 mt-16">
              <div className="mt-16 flex flex-col items-center">
-                    <h4 className="text-2xl font-bold text-navy-700 dark:text-white">
+                    <h4 className="text-xl font-bold text-navy-700 dark:text-white">
                     {member.fullname}
                     </h4>
                     <p className="text-base font-normal text-gray-600">
                       {member.position}
                     </p>
                 </div> 
-                <p className="text-start text-gray-600 text-base pt-3 font-normal">
+                <p className="text-start text-gray-600 text-sm font-serif pt-3">
                   {member.brief}
                 </p>
                 <div className="w-full flex justify-center pt-5 pb-5">
      
-           
-      
                 </div>
             </div>
         </div>
     </div>
-</div>
-                      
-                  
-                       
+
+                               
                         </div>
               ))}
                     </div>
