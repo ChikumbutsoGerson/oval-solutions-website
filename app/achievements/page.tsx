@@ -38,7 +38,7 @@ export default async function Home() {
                         </div>
                         <p className="mt-1 text-base leading-relaxed text-gray-600 font-sarif group-hover:text-white">
                         Successfully delivered
-                        projects for these companies exceeding our clients’
+                        projects for these companies exceeding our clients
                         expectation
                         </p>
                     </div>
