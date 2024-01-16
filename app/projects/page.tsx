@@ -15,15 +15,44 @@ export default async function Home() {
     const data = (await getData()) as Project[]; 
     if (!data || data.length === 0) {
         return (
-          <div className="flex items-center justify-center h-screen bg-white text-white text-4xl">
-            No projects at the moment
+           <main className="w-full h-full  items-center justify-center">
+           <div className="mx-auto flex-grow text-center">
+           <img className="w-full h-60 object-cover mt-15" src='https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'/>
+              <div className="w-full mx-auto p-5 bg-green-50 pt-0">
+              <div className=" bg-blue-500ray-50">
+              <div className="py-10  sm:py-16 block lg:py-24 relative bg-opacity-50  z-40 " >
+                  <div
+                      className="relative mx-auto h-full px-4 pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+                      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
+                          <div className="max-w-xl mx-auto text-center">
+                              <div className="inline-flex px-4 py-1.5 mx-auto rounded-full  ">
+                                  <p className="text-4xl font-semibold tracking-widest text-g uppercase  border-b-8 border-yellow-400">
+                                    OUR PROJECTS
+                                    </p>
+                              </div>
+                              <p className="mt-1 text-base leading-relaxed text-gray-600 font-sarif group-hover:text-white">
+                             Explore some of our recent projects
+                           
+                              </p>
+                          </div>
+                          <div  className="2xl text-center">
+                          No projects at the moment
+                          </div>
+                              
+                      </div>
+                  </div>
+                  </div>
           </div>
+              </div>
+          </div>
+          </main>
+      
         );
       }
   return (
    
  <main className="w-full h-full  items-center justify-center">
-     <div className="mx-auto text-center">
+     <div className="mx-auto flex-grow text-center">
      <img className="w-full h-60 object-cover mt-15" src='https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'/>
         <div className="w-full mx-auto p-5 bg-green-50 pt-0">
         <div className=" bg-blue-500ray-50">
@@ -60,10 +89,15 @@ export default async function Home() {
                             <div className="p-5">
                           
                                <h5 className="mb-2 text-xl  font-bold tracking-tight text-yellow-600 dark:text-white">
-                                      {project.title}</h5>
+                               {project.title.length > 65
+                                ? `${project.title.slice(0, 65)}...`
+                                : project.title}
+                                </h5>
                        
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                {project.overview}
+                                {project.overview.length > 75
+                                ? `${project.overview.slice(0, 75)}...`
+                                : project.overview}
                                   </p>
                                 <p  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                     Read More...

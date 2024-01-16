@@ -26,7 +26,7 @@ export default async function SlugPage({ params }: { params: { slug: string } })
       return (
            <main className='h-full w-full mt-18'>
             <div className="max-w-4xl mx-auto bg-gray-100">
-            <img className="w-full h-96 object-cover mt-15" src={urlFor(data.mainImage).url()!}/>
+            <img className="w-full h-96 object-cover mt-20" src={urlFor(data.mainImage).url()!}/>
            <article className="w-full mx-auto p-5">
             <h1 className="text-yellow-500 font-bold text-[32px] border-b-[1px] border-b-yellow-800 mt-10">
                 {data.title}

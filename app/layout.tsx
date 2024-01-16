@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/oval-logo-2.jpeg" />
+      </head>
       <body className={`${inter.className} bg-white overflow-y-scroll overflow-x-hidden`}>
         <NavBar />
         {children}
