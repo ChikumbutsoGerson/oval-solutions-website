@@ -4,71 +4,81 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-<div className="bg-green-500">
-    <div className="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+    <div className="bg-green-500  min-h-screen">
+      <div className="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
         <div className="p-5 sm:w-2/12 border-r">
-            <div className="uppercase text-yellow-300 font-bold text-2xl">Menu</div>
-            <ul>
-                <li className="my-2">
-                    <Link className="hover:text-yellow-100" href="/">Home</Link>
-                </li>
-                <li className="my-2">
-                    <Link className="hover:text-yellow-100" href="/services">Services</Link>
-                </li>
-                <li className="my-2">
-                    <Link className="hover:text-yellow-100" href="/our-team">Team</Link>
-                </li>
-        
-            </ul>
+          <div className="uppercase text-yellow-300 font-bold text-2xl">
+            Menu
+          </div>
+          <ul>
+            <li className="my-2">
+              <Link className="hover:text-yellow-100" href="/">
+                Home
+              </Link>
+            </li>
+            <li className="my-2">
+              <Link className="hover:text-yellow-100" href="/services">
+                Services
+              </Link>
+            </li>
+            <li className="my-2">
+              <Link className="hover:text-yellow-100" href="/our-team">
+                Team
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className="p-5 sm:w-7/12 border-r text-center">
-            <h3 className="font-bold text-2xl text-yellow-300 mb-4 uppercase text-start">Oval Solutions Company</h3>
-            <p className="mb-10 font-serif text-start">
+          <h3 className="font-bold text-2xl text-yellow-300 mb-4 uppercase text-start">
+            Oval Solutions Company
+          </h3>
+          <p className="mb-10 font-serif text-start">
             Innovative and unconventional ICT solutions provider that came into
-             existence in May 2021
-            </p>
+            existence in May 2021
+          </p>
         </div>
         <div className="p-5 sm:w-3/12">
-            <div className="uppercase text-yellow-300 font-bold text-2xl">Contact Us</div>
-            <ul>
-                <li className="my-2 font-serif">
-                    <p>
-                    +265 999 444 592
-                    </p>
-                </li>
-                <li className="my-2 font-serif">
-                    <p>
-                    +265 888 979 795
-                    </p>
-                </li>
-                <li className="my-2 font-serif">
-                    <p>
-                    sales@ovalsolutions.net
-                    </p>
-                </li>
-                <li className="my-2 font-serif">
-                    <p>
-                    ovalsolutionss@gmail.com
-                    </p>
-                </li>
-            </ul>
+          <div className="uppercase text-yellow-300 font-bold text-2xl">
+            Contact Us
+          </div>
+          <ul>
+            <li className="my-2 font-serif">
+              <p>+265 999 444 592</p>
+            </li>
+            <li className="my-2 font-serif">
+              <p>+265 888 979 795</p>
+            </li>
+            <li className="my-2 font-serif">
+              <p>sales@ovalsolutions.net</p>
+            </li>
+            <li className="my-2 font-serif">
+              <p>ovalsolutionss@gmail.com</p>
+            </li>
+          </ul>
         </div>
-    </div>
-    <div className="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+      </div>
+      <div className="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
         <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-            <a href="www.linkedin.com" className="w-6 mx-1">
-                <svg className="fill-current cursor-pointer text-white hover:text-yellow-200" width="100%" height="100%"
-                    viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    xmlSpace="preserve"
-                    style={{
-                      fillRule: 'evenodd',
-                      clipRule: 'evenodd',
-                      strokeLinejoin: 'round',
-                      strokeMiterlimit: 2,
-                    }}
-                    >
-                    <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+          <a href="#" className="w-6 mx-1">
+            <svg
+              className="fill-current cursor-pointer text-white hover:text-yellow-200"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xmlSpace="preserve"
+              style={{
+                fillRule: "evenodd",
+                clipRule: "evenodd",
+                strokeLinejoin: "round",
+                strokeMiterlimit: 2,
+              }}
+            >
+              <path
+                id="Twitter"
+                d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
                   5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
                   -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
                   0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
@@ -81,43 +91,57 @@ const Footer = () => {
                   1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
                   -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
                   6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
-                  0.771,-0.67 1.054,-1.093Z"></path>
-                </svg>
-            </a>
-            <a href="#" className="w-6 mx-1">
-                <svg className="fill-current cursor-pointer text-white hover:text-yellow-200" width="100%" height="100%"
-                    viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    xmlSpace="preserve"
-                    // xmlnsSerif="http://www.serif.com/"
-                    style={{
-                      fillRule: 'evenodd',
-                      clipRule: 'evenodd',
-                      strokeLinejoin: 'round',
-                      strokeMiterlimit: 2,
-                    }}
-                    >
-                    <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                  0.771,-0.67 1.054,-1.093Z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#" className="w-6 mx-1">
+            <svg
+              className="fill-current cursor-pointer text-white hover:text-yellow-200"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xmlSpace="preserve"
+              style={{
+                fillRule: "evenodd",
+                clipRule: "evenodd",
+                strokeLinejoin: "round",
+                strokeMiterlimit: 2,
+              }}
+            >
+              <path
+                id="Facebook"
+                d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
                   5.373,-12 12,-12c6.627,0 12,5.373
                   12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
                   0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
-                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
-                </svg>
-            </a>
+                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"
+              ></path>
+            </svg>
+          </a>
 
-            <a href="#" className="w-6 mx-1">
-                <svg className="fill-current cursor-pointer text-white hover:text-yellow-200" width="100%" height="100%"
-                    viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    xmlSpace="preserve"
-                    // xmlnsSerif="http://www.serif.com/"
-                    style={{
-                      fillRule: 'evenodd',
-                      clipRule: 'evenodd',
-                      strokeLinejoin: 'round',
-                    }}  
-                   >
-                    <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+          <a href="#" className="w-6 mx-1">
+            <svg
+              className="fill-current cursor-pointer text-white hover:text-yellow-200"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xmlSpace="preserve"
+              style={{
+                fillRule: "evenodd",
+                clipRule: "evenodd",
+                strokeLinejoin: "round",
+              }}
+            >
+              <path
+                id="Shape"
+                d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
                   3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
                   -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
                   -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
@@ -130,19 +154,18 @@ const Footer = () => {
                   -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
                   -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
                   0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
-                  0.4,1.5l0,4.5l2.9,0Z"></path>
-                </svg>
-            </a>
-
+                  0.4,1.5l0,4.5l2.9,0Z"
+              ></path>
+            </svg>
+          </a>
         </div>
-        <div className="my-5"> Oval Solutions &copy; {new Date().getFullYear()}. All rights reserved</div>
+        <div className="my-5">
+          {" "}
+          Oval Solutions &copy; {new Date().getFullYear()}. All rights reserved
+        </div>
+      </div>
     </div>
-</div>
-
   );
 };
 
 export default Footer;
-
-
- 
