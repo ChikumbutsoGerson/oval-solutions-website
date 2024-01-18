@@ -28,7 +28,7 @@ export default async function SlugPage({
       <main className="h-full w-full mt-18">
         <div className="max-w-4xl mx-auto bg-gray-100">
           <img
-            className="w-full h-96 object-cover mt-20"
+            className="w-full h-96 object-cover mt-18"
             src={urlFor(data.mainImage).url()!}
           />
           <article className="w-full mx-auto p-5">
