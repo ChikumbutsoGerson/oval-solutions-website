@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -13,8 +13,25 @@ const NavBar = () => {
   };
 
   const closeMenu = () => {
-    setMenuOpen(false);
+    setTimeout(() => {
+      setMenuOpen(false);
+    }, 500);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isMenuOpen) {
+        closeMenu();
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMenuOpen, closeMenu]);
+
+  
 
   const currentPath = usePathname();
 
@@ -27,7 +44,9 @@ const NavBar = () => {
 
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#16185129]/90 bg-green-600 backdrop-blur-md z-50 px-4 md:px-10 py-4">
-      <nav className={`flex flex-col md:flex-row items-center justify-between`}>
+      <nav
+        className={`flex sm:flex-row md:flex-row items-center justify-between`}
+      >
         <div className="text-white font-bold text-xl">
           <Image
             src="/oval-logo.png"
@@ -80,7 +99,7 @@ const NavBar = () => {
         <div
           className={`md:space-y-0 space-y-4 md:space-x-8 md:flex items-center mb-4  ${
             isMenuOpen
-              ? "flex flex-col justify-between bg-green-800 p-10 w-full transform translate-y-8"
+              ? "fixed flex flex-col top-0 left-0  mr-4  mt-10 justify-between bg-green-800 pt-5 pb-5 rounded-3xl w-full transform translate-y-8"
               : "hidden"
           }`}
         >
