@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Oval Solutions Company",
   description: "Oval Solutions Company Website",
+  icons: {icon: '/oval-logo.png'}
 };
 
 export default function RootLayout({
@@ -18,9 +19,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/oval-logo.png" />
-      </head>
       <body
         className={`${inter.className} bg-white overflow-y-scroll overflow-x-hidden`}
       >
