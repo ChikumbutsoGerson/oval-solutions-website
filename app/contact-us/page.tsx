@@ -29,6 +29,9 @@ export default async function Home() {
           console.log(error.text);
         }
       );
+  }
+  else {
+    console.error('Form reference is not an HTMLFormElement or is null/undefined');
   };
 }
 
