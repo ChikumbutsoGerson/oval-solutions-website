@@ -1,24 +1,35 @@
-import { Team } from "@/app/lib/interface";
-import { client, urlFor } from "@/app/lib/sanity";
-import Image from "next/image";
+"use client";
 
-async function getData() {
-  const query = `*[_type == 'team']`;
-
-  const data = await client.fetch(query);
-
-  return data;
-}
+import { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 export default async function Home() {
-  const data = (await getData()) as Team[];
-  if (!data || data.length === 0) {
-    return (
-      <div className="flex items-center justify-center h-screen bg-white text-white text-4xl">
-        No members at the moment
-      </div>
-    );
-  }
+  const form = useRef();
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_030pm84",
+        "template_x855jr3",
+        form.current,
+        "U4a08uiqxF6IF6Ogy"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <main className="w-full h-full  items-center justify-center">
       <div className="mx-auto text-center">
@@ -149,10 +160,68 @@ export default async function Home() {
                         </div>
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                           <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-                            <img
-                              className="w-full h-full object-cover"
-                              src="https://projects.piglja.com/wp-content/uploads/2022/07/contact.jpeg"
-                            />
+                            <form ref={form} onSubmit={sendEmail}>
+                              <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2">
+                                  Name
+                                </label>
+                                <input
+                                  required
+                                  minlength="3"
+                                  type="text"
+                                  id="user_name"
+                                  name="user_name"
+                                  className="w-full p-2 border border-gray-300 rounded-xl focus:outline-none focus:border-green-600"
+                                />
+                              </div>
+
+                              <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2">
+                                  Email
+                                </label>
+                                <input
+                                  required
+                                  type="email"
+                                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                  id="user_email"
+                                  name="user_email"
+                                  className="w-full p-2 border border-gray-300 rounded-xl focus:outline-none focus:border-green-600"
+                                />
+                              </div>
+
+                              <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2">
+                                  Message
+                                </label>
+                                <textarea
+                                  required
+                                  id="message"
+                                  name="message"
+                                  className="w-full p-5 border border-gray-300 rounded-xl focus:outline-none focus:border-green-500"
+                                ></textarea>
+                              </div>
+
+                              <div className="mb-4">
+                                <button
+                                  type="submit"
+                                  className="w-full bg-green-500 text-white p-2 rounded-xl cursor-pointer hover:bg-green-700"
+                                >
+                                  Send
+                                </button>
+                                <ToastContainer
+                                  position="bottom-right"
+                                  autoClose={5000}
+                                  hideProgressBar={false}
+                                  newestOnTop={false}
+                                  closeOnClick
+                                  rtl={false}
+                                  pauseOnFocusLoss
+                                  draggable
+                                  pauseOnHover
+                                  theme="light"
+                                />
+                              </div>
+                            </form>
 
                             <div>
                               <span className="absolute -top-10 -right-9 z-[-1]">
