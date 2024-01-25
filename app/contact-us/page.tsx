@@ -6,11 +6,12 @@ import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 
 export default async function Home() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
 
+    if(form.current instanceof HTMLFormElement && form.current){
     emailjs
       .sendForm(
         "service_030pm84",
@@ -29,6 +30,7 @@ export default async function Home() {
         }
       );
   };
+}
 
   return (
     <main className="w-full h-full  items-center justify-center">
@@ -167,7 +169,6 @@ export default async function Home() {
                                 </label>
                                 <input
                                   required
-                                  minlength="3"
                                   type="text"
                                   id="user_name"
                                   name="user_name"
