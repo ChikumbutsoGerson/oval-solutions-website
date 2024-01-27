@@ -213,7 +213,7 @@ export default async function Home() {
                                 >
                                   Send
                                 </button>
-                                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                <div className="fixed top-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 md:left-3/4">
                                   <ToastContainer
                                     position="bottom-right"
                                     autoClose={5000}
