@@ -78,7 +78,7 @@ export default async function Home() {
                                   />
                                 </svg>
                               </div>
-                              <div className="w-full">
+                              <div className="w-full xs:mr-4 sm:mr-4">
                                 <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                                   Physical Location
                                 </h4>
@@ -123,7 +123,7 @@ export default async function Home() {
                                   </defs>
                                 </svg>
                               </div>
-                              <div className="w-full">
+                              <div className="w-full xs:mr-4 sm:mr-4">
                                 <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                                   Phone Number(s)
                                 </h4>
@@ -150,7 +150,7 @@ export default async function Home() {
                                   />
                                 </svg>
                               </div>
-                              <div className="w-full">
+                              <div className="w-full xs:mr-4 sm:mr-4">
                                 <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                                   Email Address
                                 </h4>
@@ -213,7 +213,7 @@ export default async function Home() {
                                 >
                                   Send
                                 </button>
-                                <div className="fixed top-1/2 left-3/4 transform -translate-x-1 -translate-y-1/2">
+                                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                   <ToastContainer
                                     position="bottom-right"
                                     autoClose={5000}
