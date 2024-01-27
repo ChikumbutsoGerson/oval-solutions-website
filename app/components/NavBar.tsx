@@ -31,8 +31,6 @@ const NavBar = () => {
     };
   }, [isMenuOpen, closeMenu]);
 
-  
-
   const currentPath = usePathname();
 
   const HomePath = currentPath === "/";
@@ -99,7 +97,7 @@ const NavBar = () => {
         <div
           className={`md:space-y-0 space-y-4 md:space-x-8 md:flex items-center mb-4  ${
             isMenuOpen
-              ? "fixed flex flex-col top-0 left-0  mr-4  mt-10 justify-between bg-green-800 pt-5 pb-5 rounded-3xl w-full transform translate-y-8"
+              ? "fixed flex flex-col top-0 left-1 right-1 mx-auto mt-10 justify-between bg-green-800 pt-5 pb-5 rounded-3xl w-full transform translate-y-8"
               : "hidden"
           }`}
         >

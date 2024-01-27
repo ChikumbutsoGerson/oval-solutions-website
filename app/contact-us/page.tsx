@@ -11,39 +11,40 @@ export default async function Home() {
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    if(form.current instanceof HTMLFormElement && form.current){
-    emailjs
-      .sendForm(
-        "service_030pm84",
-        "template_x855jr3",
-        form.current,
-        "U4a08uiqxF6IF6Ogy"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("Message sent successfully!");
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
+    if (form.current instanceof HTMLFormElement && form.current) {
+      emailjs
+        .sendForm(
+          "service_030pm84",
+          "template_x855jr3",
+          form.current,
+          "U4a08uiqxF6IF6Ogy"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            toast.success("Message sent successfully!");
+            e.target.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    } else {
+      console.error(
+        "Form reference is not an HTMLFormElement or is null/undefined"
       );
-  }
-  else {
-    console.error('Form reference is not an HTMLFormElement or is null/undefined');
+    }
   };
-}
 
   return (
-    <main className="w-full h-full  items-center justify-center">
+    <main className="min-w-screen h-full items-center justify-center">
       <div className="mx-auto text-center">
         <div className="w-full mx-auto p-5 bg-green-50 pt-10">
           <div className="bg-green-500ray-50">
             <div className="py-10  sm:py-16 block lg:py-24 relative bg-opacity-50  z-40 ">
               <div className="relative mx-auto h-full px-4 pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
-                  <section className="relative z-10 overflow-hidden  rounded-3xl bg-white dark:bg-dark py-10 pb-10 lg:py-[10px]">
+                  <section className="relative z-10 w-12/12 overflow-hidden rounded-3xl bg-white dark:bg-dark py-10 pb-10 lg:py-[10px]">
                     <div className="container mx-auto shadow-lg rounded-3xl">
                       <div className="flex flex-wrap -mx-4 lg:justify-between">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -57,13 +58,13 @@ export default async function Home() {
                                 GET IN TOUCH
                               </p>
                             </div>
-                            <p className="text-base leading-relaxed ml-6 text-body-color dark:text-dark-6 mb-9">
+                            <p className="text-base leading-relaxed pr-5 ml-6 text-body-color dark:text-dark-6 mb-9">
                               Below are the details of our contact numbers,
                               email addresses and physical address for you to
                               easily reach us
                             </p>
                             <div className="mb-8 flex w-full max-w-[370px]">
-                              <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                              <div className="bg-primary/5 text-primary  flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                                 <svg
                                   width="32"
                                   height="32"
@@ -89,7 +90,7 @@ export default async function Home() {
                               </div>
                             </div>
                             <div className="mb-8 flex w-full max-w-[370px]">
-                              <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                              <div className="bg-primary/5 text-primary flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                                 <svg
                                   width="32"
                                   height="32"
@@ -134,8 +135,8 @@ export default async function Home() {
                                 </p>
                               </div>
                             </div>
-                            <div className="mb-8 flex w-full max-w-[370px]">
-                              <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                            <div className="mb-8 flex w-full max-w-[370px]  pr-5">
+                              <div className="bg-primary/5 text-primary flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                                 <svg
                                   width="32"
                                   height="32"
@@ -212,18 +213,20 @@ export default async function Home() {
                                 >
                                   Send
                                 </button>
-                                <ToastContainer
-                                  position="bottom-right"
-                                  autoClose={5000}
-                                  hideProgressBar={false}
-                                  newestOnTop={false}
-                                  closeOnClick
-                                  rtl={false}
-                                  pauseOnFocusLoss
-                                  draggable
-                                  pauseOnHover
-                                  theme="light"
-                                />
+                                <div className="fixed top-1/2 left-3/4 transform -translate-x-1 -translate-y-1/2">
+                                  <ToastContainer
+                                    position="bottom-right"
+                                    autoClose={5000}
+                                    hideProgressBar={false}
+                                    newestOnTop={false}
+                                    closeOnClick
+                                    rtl={false}
+                                    pauseOnFocusLoss
+                                    draggable
+                                    pauseOnHover
+                                    theme="light"
+                                  />
+                                </div>
                               </div>
                             </form>
 
