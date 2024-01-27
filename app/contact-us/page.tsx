@@ -54,11 +54,11 @@ export default async function Home() {
                             </div>
 
                             <div className="inline-flex px-4 py-1.5 mx-auto rounded-full  ">
-                              <p className="text-4xl mb-2 font-semibold tracking-widest text-g uppercase  border-b-8 border-yellow-400">
+                              <p className="text-2xl md:text-4xl mb-2 font-semibold tracking-widest text-g uppercase  border-b-8 border-yellow-400">
                                 GET IN TOUCH
                               </p>
                             </div>
-                            <p className="text-base leading-relaxed pr-5 ml-6 text-body-color dark:text-dark-6 mb-9">
+                            <p className="text-xs md:text-base leading-relaxed pr-5 ml-6 text-body-color dark:text-dark-6 mb-9">
                               Below are the details of our contact numbers,
                               email addresses and physical address for you to
                               easily reach us
@@ -79,10 +79,10 @@ export default async function Home() {
                                 </svg>
                               </div>
                               <div className="w-full xs:mr-4 sm:mr-4">
-                                <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                <h4 className="text-base md:text-xl mb-1  font-bold text-dark dark:text-white">
                                   Physical Location
                                 </h4>
-                                <p className="text-base text-body-color dark:text-dark-6">
+                                <p className="text-sm mr-6 md:text-base text-body-color dark:text-dark-6">
                                   Royal Hardware Building, Top Floor Next to
                                   Cash Build, Opposite Malawi Housing
                                   Corporation Area 4
@@ -123,14 +123,15 @@ export default async function Home() {
                                   </defs>
                                 </svg>
                               </div>
-                              <div className="w-full xs:mr-4 sm:mr-4">
-                                <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                              <div className="w-full">
+                                <h4 className="text-base md:text-xl mb-1 font-bold text-dark dark:text-white">
                                   Phone Number(s)
                                 </h4>
-                                <p className="text-base text-body-color dark:text-dark-6">
+                                
+                                <p className="text-sm mr-6 md:text-base text-body-color dark:text-dark-6">
                                   +265 999 444 592
                                 </p>
-                                <p className="text-base text-body-color dark:text-dark-6">
+                                <p className="text-sm mr-6 md:text-base text-body-color dark:text-dark-6">
                                   +265 888 979 795
                                 </p>
                               </div>
@@ -150,14 +151,14 @@ export default async function Home() {
                                   />
                                 </svg>
                               </div>
-                              <div className="w-full xs:mr-4 sm:mr-4">
-                                <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                              <div className="w-full">
+                                <h4 className="mb-1 text-base md:text-xl font-bold text-dark dark:text-white">
                                   Email Address
                                 </h4>
-                                <p className="text-base text-body-color dark:text-dark-6">
+                                <p className="text-sm md:text-base text-body-color dark:text-dark-6">
                                   sales@ovalsolutions.net
                                 </p>
-                                <p className="text-base text-body-color dark:text-dark-6">
+                                <p className="text-sm md:text-base text-body-color dark:text-dark-6">
                                   ovalsolutionss@gmail.com
                                 </p>
                               </div>
@@ -213,7 +214,7 @@ export default async function Home() {
                                 >
                                   Send
                                 </button>
-                                <div className="fixed top-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 md:left-3/4">
+                                <div>
                                   <ToastContainer
                                     position="bottom-right"
                                     autoClose={5000}
@@ -225,6 +226,7 @@ export default async function Home() {
                                     draggable
                                     pauseOnHover
                                     theme="light"
+                                    style={{  marginBottom: "300px" }}
                                   />
                                 </div>
                               </div>
