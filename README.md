@@ -54,22 +54,7 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file thanks to Fast Refresh.
-
-## Project Structure
-
-```
-oval-solutions-website/
-├── app/                  # Next.js App Router directory
-│   ├── page.tsx         # Main homepage
-│   ├── layout.tsx       # Root layout component
-│   └── globals.css      # Global styles
-├── public/              # Static assets (images, fonts, etc.)
-├── components/          # Reusable React components
-├── lib/                 # Utility functions and helpers
-└── package.json         # Project dependencies
-```
+9
 
 ## Available Scripts
 
@@ -78,19 +63,6 @@ oval-solutions-website/
 - `npm run start` - Starts the production server
 - `npm run lint` - Runs ESLint to check code quality
 
-## Customization
-
-### Styling
-The project supports multiple styling approaches:
-- **CSS Modules**: Scoped component styles
-- **Tailwind CSS**: Utility-first CSS framework (if configured)
-- **Global Styles**: Located in `app/globals.css`
-
-### Configuration
-Key configuration files:
-- `next.config.js` - Next.js configuration
-- `tsconfig.json` - TypeScript configuration
-- `package.json` - Project dependencies and scripts
 
 ## Learn More
 
